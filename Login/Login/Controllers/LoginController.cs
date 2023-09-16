@@ -48,12 +48,10 @@ namespace Login.Controllers
         }
 
         [HttpGet]
-        [Route("Logout")]
-        public async void Logout()
+        [Route("IsLoggedIn")]
+        public IActionResult Logout()
         {
-            var context = httpContextAccessor.HttpContext;
-
-
+            return Ok();
         }
 
         [HttpPost]
